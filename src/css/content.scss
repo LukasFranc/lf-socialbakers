@@ -1,0 +1,14 @@
+.mainContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    margin-bottom: 35px;
+  }
+  p {
+    opacity: 0.8;
+  }
+}

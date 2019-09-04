@@ -1,0 +1,19 @@
+nav {
+  border-bottom: 1px solid $gray;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.nav-link {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: $border-radius;
+  color: $font-color;
+  transition: $transition-base;
+  &.active, &:hover, &:focus {
+    font-weight: $font-weight-bold;
+    background: $gray-light;
+    color: $font-color;
+  }
+}

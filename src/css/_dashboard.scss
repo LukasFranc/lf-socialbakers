@@ -1,0 +1,48 @@
+.dashboard {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  min-height: 100%;
+  width: 100%;
+  max-width: 65%;
+  display: flex;
+  background: #f9f9fa;
+  z-index: 5;
+}
+
+.dashboardContent {
+  flex: 0 0 72%;
+  max-width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardNavigation {
+  padding: 20px 35px;
+  border-right: 1px solid $gray;
+  width: 100%;
+  flex: 0 0 28%;
+  max-width: 28%;
+}
+
+
+.closeButton {
+  @include size(40px);
+  background: linear-gradient(to bottom, rgba(89,94,104,1) 0%, rgba(64,71,82,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -40px;
+  top: 25px;
+  border: none;
+  border-radius: $border-radius 0 0 $border-radius;
+  transition: $transition-base;
+  &:hover, &:focus  {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  img {
+    @include size(20px);
+  }
+}
