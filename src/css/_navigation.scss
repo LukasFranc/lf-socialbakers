@@ -11,7 +11,7 @@ nav {
   border-radius: $border-radius;
   color: $font-color;
   transition: $transition-base;
-  &.active, &:hover, &:focus {
+  @include hover-focus-active() {
     font-weight: $font-weight-bold;
     background: $gray-light;
     color: $font-color;

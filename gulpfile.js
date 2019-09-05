@@ -6,7 +6,7 @@ var $ = gulpLoadPlugins({pattern: '*'});
 
 
 gulp.task('build:sass', function () {
-  return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/css/main.scss'])
+  return gulp.src(['src/css/main.scss'])
     .pipe($.sass())
     .pipe($.concat('project.css'))
     .pipe(gulp.dest('src/dist/css/'))

@@ -24,7 +24,7 @@
   border-radius: $border-radius;
   margin-right: 20px;
   transition: $transition-base;
-  &.active, &:hover, &:focus {
+  @include hover-focus-active() {
     border: 1px solid $gray;
     cursor: pointer;
   }

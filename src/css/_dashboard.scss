@@ -38,7 +38,7 @@
   border: none;
   border-radius: $border-radius 0 0 $border-radius;
   transition: $transition-base;
-  &:hover, &:focus  {
+  @include hover-focus() {
     opacity: 0.8;
     cursor: pointer;
   }
